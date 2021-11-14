@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://VladimirPalamov.github.io/goit-markup-comand-prog-01",
+  "homepage": "https://sergeysharashkin.github.io/test_work_msk/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-markup-comand-prog-01/"
+    "build": "parcel build src/*.html --public-url /test_work_msk/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/SergeySharashkin/test_work_msk.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Sergey Sharashkin <s_sharashkin@mail.ru>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/SergeySharashkin/test_work_msk/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",

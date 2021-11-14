@@ -1,0 +1,123 @@
+<section class="reviews" id="About">
+    <div class="reviews__container">
+        <div class="reviews__img">
+            <img class="reviews__img--item reviews__img--itemOne" srcset="
+                /images/testimonials11.png 1x,
+                /images/testimonials11@2x.png 2x" src="/images/testimonials11.png" alt="request">
+            <img class="reviews__img--item reviews__img--itemTwo item_none" srcset="
+                /images/testimonials12.png 1x,
+                /images/testimonials12@2x.png 2x" src="/images/testimonials12.png" alt="request">
+            <img class="reviews__img--item reviews__img--itemThree item_none" srcset="
+                /images/testimonials11(1).png 1x,
+                /images/testimonials11@2x(1).png 2x" src="/images/testimonials11(1).png" alt="request">
+        </div>
+        <div class="reviews__content">
+            <div class="reviews__gradient">
+                <p class="reviews__text reviews__text--one">Я Эмили из Лос-Анджелес! Являюсь фанатом данного мороженого
+                    уже много лет и регулярно покупаю их продукцию. Оно вкусное и натуральное!</p>
+                <p class="reviews__text reviews__text--two item_none">Я Дина из Чикаго! Попробовала мороженное сегодня
+                    впервые! Никогда еще не получала столько удовольствия от поедания мороженнго!</p>
+                <p class="reviews__text reviews__text--three item_none">Я Эмма из New York! Это мороженное мне
+                    порекомендовала подруга. И теперь всей семьей мы его покупаем каждые выходные. Всем советую!</p>
+            </div>
+        </div>
+        <div class="reviews__wrappers">
+            <div class="reviews__wrappers-item"></div>
+            <div class="reviews__wrappers-item reviews__wrappers-itemMid"></div>
+            <div class="reviews__wrappers-item"></div>
+        </div>
+        <h5 class="reviews__name reviews__nameOne">Emily, Los Angeles</h5>
+        <h5 class="reviews__name reviews__nameTwo item_none">Dina, Chicago</h5>
+        <h5 class="reviews__name reviews__nameThree item_none">Emma, New York</h5>
+        <div class="reviews__pagination">
+            <a class="reviews__pagination-link reviews__pagination-linkLeft item_hidden" href="#About"></a>
+            <a class="reviews__pagination-link reviews__pagination-linkMid" href="#About"></a>
+            <a class="reviews__pagination-link reviews__pagination-linkRight" href="#About"></a>
+            <a class="reviews__svg">
+                <svg class="reviews__svg--ico reviews__svg--icoLeft">
+                    <use href="/images/icons.svg#home"></use>
+                </svg>
+                <svg class="reviews__svg--ico reviews__svg--icoMid item_hidden">
+                    <use href="/images/icons.svg#home"></use>
+                </svg>
+                <svg class="reviews__svg--ico reviews__svg--icoRight item_hidden">
+                    <use href="/images/icons.svg#home"></use>
+                </svg>
+        </div>
+    </div>
+    </div>
+    <script>
+        // действие при клике на первый маркер
+        const img1 = document.querySelector('.reviews__img--itemOne')
+        const svg1 = document.querySelector('.reviews__svg--icoLeft')
+        const txt1 = document.querySelector('.reviews__text--one')
+        const name1 = document.querySelector('.reviews__nameOne')
+        const btn1 = document.querySelector('.reviews__pagination-linkLeft');
+        btn1.addEventListener('click', rev1)
+        function rev1() {
+            img1.classList.remove('item_none')
+            img2.classList.add('item_none')
+            img3.classList.add('item_none')
+            svg1.classList.remove('item_hidden')
+            svg2.classList.add('item_hidden')
+            svg3.classList.add('item_hidden')
+            txt1.classList.remove('item_none')
+            txt2.classList.add('item_none')
+            txt3.classList.add('item_none')
+            name1.classList.remove('item_none')
+            name2.classList.add('item_none')
+            name3.classList.add('item_none')
+            btn1.classList.add('item_hidden')
+            btn2.classList.remove('item_hidden')
+            btn3.classList.remove('item_hidden');
+        }
+        // действие при клике на второй маркер
+        const img2 = document.querySelector('.reviews__img--itemTwo')
+        const svg2 = document.querySelector('.reviews__svg--icoMid')
+        const txt2 = document.querySelector('.reviews__text--two')
+        const name2 = document.querySelector('.reviews__nameTwo')
+        const btn2 = document.querySelector('.reviews__pagination-linkMid');
+        btn2.addEventListener('click', rev2)
+        function rev2() {
+            img1.classList.add('item_none')
+            img2.classList.remove('item_none')
+            img3.classList.add('item_none')
+            svg1.classList.add('item_hidden')
+            svg2.classList.remove('item_hidden')
+            svg3.classList.add('item_hidden')
+            txt1.classList.add('item_none')
+            txt2.classList.remove('item_none')
+            txt3.classList.add('item_none')
+            name1.classList.add('item_none')
+            name2.classList.remove('item_none')
+            name3.classList.add('item_none')
+            btn1.classList.remove('item_hidden')
+            btn2.classList.add('item_hidden')
+            btn3.classList.remove('item_hidden');
+        }
+        // действие при клике на третий маркер
+        const img3 = document.querySelector('.reviews__img--itemThree')
+        const svg3 = document.querySelector('.reviews__svg--icoRight')
+        const txt3 = document.querySelector('.reviews__text--three')
+        const name3 = document.querySelector('.reviews__nameThree')
+        const btn3 = document.querySelector('.reviews__pagination-linkRight');
+        btn3.addEventListener('click', rev3)
+        function rev3() {
+            img1.classList.add('item_none')
+            img2.classList.add('item_none')
+            img3.classList.remove('item_none')
+            svg1.classList.add('item_hidden')
+            svg2.classList.add('item_hidden')
+            svg3.classList.remove('item_hidden')
+            txt1.classList.add('item_none')
+            txt2.classList.add('item_none')
+            txt3.classList.remove('item_none')
+            name1.classList.add('item_none')
+            name2.classList.add('item_none')
+            name3.classList.remove('item_none')
+            btn1.classList.remove('item_hidden')
+            btn2.classList.remove('item_hidden')
+            btn3.classList.add('item_hidden');
+        }
+    </script>
+</section>

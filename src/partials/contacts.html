@@ -1,0 +1,170 @@
+<section class="contacts">
+  <div class="contacts__container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <div class="contacts__cards-container">
+      <ul class="contacts__card" id="Contact">
+        <li class="contacts__address">
+          <p class="contacts__place">Cafe</p>
+          <p class="contacts__city">Chicago</p>
+          <p class="contacts__info">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        </li>
+        <li class="contacts__working-hours">
+          <p class="contacts__days">Monday - Friday</p>
+          <p class="contacts__time contacts__time--margin">06:00 AM - 10:00 PM</p>
+          <p class="contacts__days">Saturday - Sunday</p>
+          <p class="contacts__time">08:00 AM - 16:00 PM</p>
+        </li>
+        <li class="contacts__links">
+          <a href="tel:+610383766284">+61(0) 383 766 284</a>
+          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </li>
+      </ul>
+      <ul class="contacts__card">
+        <li class="contacts__address">
+          <p class="contacts__place contacts__place--green">Foodtruck</p>
+          <p class="contacts__city">Los Angeles</p>
+          <p class="contacts__info">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        </li>
+        <li class="contacts__working-hours">
+          <p class="contacts__days">Monday - Friday</p>
+          <p class="contacts__time contacts__time--margin">06:00 AM - 10:00 PM</p>
+          <p class="contacts__days">Saturday - Sunday</p>
+          <p class="contacts__time">08:00 AM - 16:00 PM</p>
+        </li>
+        <li class="contacts__links">
+          <a href="tel:+610383766284">+61(0) 383 766 284</a>
+          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </li>
+      </ul>
+      <ul class="contacts__card">
+        <li class="contacts__address">
+          <p class="contacts__place">Cafe</p>
+          <p class="contacts__city">New York</p>
+          <p class="contacts__info">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        </li>
+        <li class="contacts__working-hours">
+          <p class="contacts__days">Monday - Friday</p>
+          <p class="contacts__time contacts__time--margin">06:00 AM - 10:00 PM</p>
+          <p class="contacts__days">Saturday - Sunday</p>
+          <p class="contacts__time">08:00 AM - 16:00 PM</p>
+        </li>
+        <li class="contacts__links">
+          <a href="tel:+610383766284">+61(0) 383 766 284</a>
+          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts__buttons-container">
+      <button type="button" class="contacts__button contacts__button--locations">
+        Our Locations
+        <svg class="contacts__button-icon" width="6" height="10">
+          <use href="./images/icons.svg#arrow-white"></use>
+        </svg>
+      </button>
+      <button type="button" class="contacts__button contacts__button--reverse">
+        Franchise
+        <svg class="contacts__button-icon" width="6" height="10">
+          <use href="./images/icons.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="backdrop__in__contacts is-hidden">
+    <div class="modal__in__contacts  modal__submit">
+
+      <svg class="close-button-contacts button__close_cont" width='14' height='14'>
+        <use href="/images/icons.svg#close"></use>
+      </svg>
+
+      <span class="modal__title">Оставьте свои данные, мы вам перезвоним</span>
+      <form class="js-speaker-form" name="service">
+        <label class="modal__label" for="user_name"><span class="modal__mark">Имя</span> </label>
+        <div class="input__container">
+          <input class="input" type="text" name="name" id="user_name" />
+          <!-- <svg class="input__icon">
+            <use href=''></use>
+          </svg> -->
+        </div>
+
+        <label class="modal__label" for="tel"><span class="modal__mark">Телефон</span> </label>
+        <div class="input__container">
+          <input class="input" type="tel" name="telephone" id="tel" />
+          <!-- <svg class=input__icon>
+            <use href=''></use>
+          </svg> -->
+        </div>
+
+        <label class="modal__label" for="user_mail_modal"><span class="modal__mark">Почта</span>
+        </label>
+        <div class="input__container">
+          <input class="input" type="email" name="mail" id="user_mail_modal" />
+          <!-- <svg class=input__icon>
+            <use href=''></use>
+          </svg> -->
+        </div>
+
+        <label class="modal__label" for="comment"><span class="modal__mark">Комментарий</span></label>
+        <div class="input__container">
+          <textarea class="comment" id="comment" name="comment" placeholder="Введите текст"></textarea>
+        </div>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="checkbox" value="checkbox" />
+          <!-- <svg class="checkbox__icon">
+            <use href=''></use>
+          </svg> -->
+          <span class="checkbox__title">Я принимаю <a href="" class="checkbox__link"> Условия договора</a></span>
+        </label>
+        <label class="send">
+          <button type="submit" class="button-submit-contacts">Отправить</button>
+        </label>
+      </form>
+    </div>
+  </div>
+  <div class="backdrop-for-our-locations is-hidden">
+    <div class="modal__in__contacts">
+      <svg class="close_button_contacts button__close_cont_loc" width='14' height='14'>
+        <use href="/images/icons.svg#close"></use>
+      </svg>
+      <span class="modal__title">Our locations in:</span>
+      <p>Chicago</p>
+      <div class="locations-thumbnail">
+        <img src="./images/modal-chicago-full.jpg" alt="Our locations in Chicago " />
+      </div>
+      <p>Los Angeles</p>
+      <div class="locations-thumbnail">
+        <img src="./images/modal-la-full.jpg" alt="Our locations in Los Angeles" />
+      </div>
+      <p>New York</p>
+      <div class="locations-thumbnail">
+        <img src="./images/modal-ny-full.jpg" alt="Our locations in New York" />
+      </div>
+    </div>
+  </div>
+  <script>
+    const button__franchise = document.querySelector('.contacts__button--reverse');
+    button__franchise.addEventListener('click', isOpenModalFranchise);
+    const aaaa = document.querySelector('.backdrop__in__contacts');
+    function isOpenModalFranchise() {
+      aaaa.classList.remove('is-hidden');
+    }
+    const bbbb = document.querySelector('.close-button-contacts');
+    bbbb.addEventListener('click', isCloseModalFranchise);
+    function isCloseModalFranchise() {
+      aaaa.classList.add('is-hidden');
+    }
+    const button__locations = document.querySelector('.contacts__button--locations');
+
+    button__locations.addEventListener('click', isOpenModalLocations);
+    const cccc = document.querySelector('.backdrop-for-our-locations');
+
+    function isOpenModalLocations() {
+      cccc.classList.remove('is-hidden');
+    }
+    const dddd = document.querySelector('.close_button_contacts');
+    console.log(dddd)
+    dddd.addEventListener('click', isCloseModalLocations);
+    function isCloseModalLocations() {
+      cccc.classList.add('is-hidden');
+    }
+  </script>
+</section>

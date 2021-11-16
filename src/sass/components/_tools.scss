@@ -10,6 +10,7 @@
 }
 .tools {
  @extend %auto-margin;
+ border-top: 1px solid #e5e5e5;
 }
 .tools__container {
     @extend %auto-margin;
@@ -17,9 +18,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 29px;
+  padding-bottom: 26px;
 }
 .tools-button {
 font-size: 30px;
 border: none;
 background: none;
+margin: 0;
 }

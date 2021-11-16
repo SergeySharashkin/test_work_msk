@@ -72,5 +72,45 @@ font-family: $primary-font
 .header__contacts {
   @extend %list;
   display: flex;
+  margin-left: auto;
+  
+}
+.header__contacts__item {
+  width: 45px;
+  height: 56px;
+  margin-right: 33px;
+  fill: $logo-color;
+  &:last-child {
+    margin: 0;
+  }
+  &.header__contacts__item--shop{
+    fill: $accent-color;
+  
+    position: relative;
+    &::after{
+      content: '12';
+      color: $accent-color;
+      font-size: 25px;
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+      // line-height: 1.335;
+      
+      // border: 2px solid black;
+  // width: 50px;
+    }
+  }
+}
+// .header__contacts__link {
+
+// }
+.header__contacts__tel {
+fill: $logo-color;
+
+
+
+}
+.header__contacts__shop {
+  fill: $accent-color;
   
 }

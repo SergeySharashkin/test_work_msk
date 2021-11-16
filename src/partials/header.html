@@ -1,10 +1,6 @@
 <header class="page_header">
   <div class="page-header__container">
-    <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="menu-toggle__image">
         <use href="./images/icons.svg#icon-menu"></use>
       </svg>
@@ -30,7 +26,6 @@
           </ul>
         </nav>
       </div>
-            
     </div>
     <a href="">
       <div class="header__link">
@@ -43,13 +38,19 @@
         </div>
       </div>
     </a>
-    <ul class= "header__contacts">
-      <li><a href=""><svg class="logo logo--header" width="29" height="28">
-        <use xlink:href="./images/icons.svg#icon-telephone"></use>
-      </svg></a></li>
-      <li><a href=""><svg class="logo logo--header" width="29" height="28">
-        <use xlink:href="./images/icons.svg#icon-shopping"></use>
-      </svg></a></li>
+    <ul class="header__contacts">
+      <li class="header__contacts__item">
+        <a href=""
+          ><svg class="header__contacts__tel" width="45" height="56">
+            <use xlink:href="./images/icons.svg#icon-telephone"></use></svg
+        ></a>
+      </li>
+      <li class="header__contacts__item header__contacts__item--shop">
+        <a href=""
+          ><svg class="header__contacts__shop" width="56" height="50">
+            <use xlink:href="./images/icons.svg#icon-shopping"></use></svg
+        ></a>
+      </li>
     </ul>
   </div>
 </header>

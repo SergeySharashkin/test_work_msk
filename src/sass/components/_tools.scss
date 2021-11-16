@@ -1,0 +1,25 @@
+.tools-tittel {
+  font-size: 30px;
+  font-family: 'Myriad Pro';
+  color: rgb(0, 0, 0);
+  line-height: 0.533;
+//   position: absolute;
+  // left: 28.938px;
+  // top: 147.833px;
+  // z-index: 31;
+}
+.tools {
+ @extend %auto-margin;
+}
+.tools__container {
+    @extend %auto-margin;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tools-button {
+font-size: 30px;
+border: none;
+background: none;
+}

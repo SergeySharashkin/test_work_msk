@@ -7,6 +7,7 @@
   //   @extend %contain-padding;
   @extend %auto-margin;
   padding: 10px 30px;
+  
  
 
   //   padding-top: 16px;
@@ -43,13 +44,33 @@ height: 55px;
 .header__link__description{
 margin-left: 10px;
 text-decoration: none;
+font-family: $primary-font
 
 }
 .header__link__site {
-  font-size: 24px;
+  // font-size: 24px;
   font-weight:bold;
+  text-decoration: none;
+  
+    font-size: 30px;
+    font-family: $primary-font;
+    color: rgb(53, 53, 53);
+    line-height: 1.2;
+    // text-align: left;
+    // position: absolute;
+    // left: 196.937px;
+    // top: 21.828px;
+    // z-index: 37;
+  
+  
 }
 .header__link__tittel {
   font-size: 18px;
+  font-family: $primary-font;
+  text-decoration: none;
+}
+.header__contacts {
+  @extend %list;
+  display: flex;
   
 }

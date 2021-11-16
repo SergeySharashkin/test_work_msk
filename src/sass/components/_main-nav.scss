@@ -17,7 +17,7 @@
   display: flex;
    margin-top: 0;
   margin-bottom: 0;
-  @media screen and (max-width:760px) {
+  @media screen and (max-width:766px) {
     flex-direction: column;
 } 
   
@@ -61,8 +61,8 @@
       background-color: $accent-color;
     }
   }
-  @media screen and (max-width:760px) {
-    padding: 10px;;
+  @media screen and (max-width:766px) {
+    padding: 10px;
 } 
 }
 

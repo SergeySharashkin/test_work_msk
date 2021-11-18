@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../fonts/MYRIADPRO-REGULAR.OTF":[["MYRIADPRO-REGULAR.8c782858.OTF","ee7a"],"ee7a"],"./../fonts/Myriad_Pro_Light_SemiExtended.otf":[["Myriad_Pro_Light_SemiExtended.3b2ed6cc.otf","l2hf"],"l2hf"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/test_work_msk/src.cefd2b0b.js.map
+//# sourceMappingURL=/test_work_msk/src.cf89d3c2.js.map

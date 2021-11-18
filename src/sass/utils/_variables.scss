@@ -1,10 +1,18 @@
 //Color variables
-$primary-text-color: rgb(53, 53, 53);
-$secondary-text-color: #907e82;
-$tertiary-text-color: #ffa5ba;
+@font-face {
+  font-family: 'MyriadPro Regular';
+  src: url('../fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+}
+@font-face {
+  font-family: 'MyriadPro Semibold';
+  src: url('../fonts/Myriad_Pro_Semibold.otf') format('opentype');
+}
+$primary-text-color: #000000;
+$secondary-text-color: #f3f1f1;
+$tertiary-text-color: #777777;
 $hero-text-color: #ffffff;
 $accent-color: rgb(253, 161, 28);
-$hero-bgr-color: #ffb8ca;
+$hero-bgr-color: #282828;
 $footer-bgr-color: #fff5f6;
 $logo-color: #34a853;
 $tettiary-bgr-color: #c2e297;
@@ -14,5 +22,5 @@ $primary-color-hover-btn: #c7133e;
 $secondary-color-hover-btn: #ecebeb;
 
 //Fonts variables
-$primary-font: Myriad Pro,  sans-serif;
-$secondary-font: Titan One, sans-serif;
+$primary-font: 'MyriadPro SemiExtended', sans-serif;
+$secondary-font: 'MyriadPro Regular', sans-serif;

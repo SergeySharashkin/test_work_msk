@@ -11,7 +11,7 @@ html {
   body {
     color: $primary-text-color;
     font-family: $primary-font;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.0em;
   }
   h1,
   h2,
@@ -42,3 +42,4 @@ html {
   // link {
   //   text-decoration: none;
   // }
+  a { text-decoration: none; }

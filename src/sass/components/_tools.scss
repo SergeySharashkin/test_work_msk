@@ -1,7 +1,7 @@
 .tools-tittel {
   font-size: 30px;
-  font-family: 'Myriad Pro';
-  color: rgb(0, 0, 0);
+  font-family: $primary-font;
+  color: $primary-text-color;
   line-height: 0.533;
 //   position: absolute;
   // left: 28.938px;
@@ -14,16 +14,17 @@
 }
 .tools__container {
     @extend %auto-margin;
-  padding: 10px 30px;
+  padding: 30px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  padding-top: 29px;
-  padding-bottom: 26px;
+  padding-top: 23px;
+  padding-bottom: 24px;
 }
 .tools-button {
 font-size: 30px;
 border: none;
 background: none;
-margin: 0;
+// margin: 0;
+padding: 0;
 }

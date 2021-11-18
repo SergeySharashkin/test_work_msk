@@ -3,7 +3,7 @@
 }
 .hero__contain {
   @extend %auto-margin;
-  padding: 10px 30px;
+  padding: 10px 30px 30px 30px;
   background-color: $hero-bgr-color;
 }
 .suggestions {
@@ -14,28 +14,31 @@
 // .suggestions__items {};
 .hero__mane {
   background-color: $hero-bgr-color;
-  padding-top: 50px;
+  padding-top: 51px;
   // display: flex;
 }
 .hero__item {
   display: flex;
-//   align-items: center;
+  line-height: 1.32;
+  
+  align-items: center;
   justify-content: space-between;
   color: $secondary-text-color;
   
 }
-// .hero__item__contain {
-// }
+.hero__item__contain {
+    max-width: 365px;
+}
 .hero__item__tittel {
   font-size: 25px;
-  line-height: 2.5;
-  margin-bottom: 32px;
+  
+  margin-bottom: 41px;
   font-family: $primary-font;
 }
 .hero__item__name {
   font-size: 40px;
   line-height: 1.05;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-family: $secondary-font;
   letter-spacing: 0em;
@@ -44,16 +47,14 @@
 .hero__item__description {
   font-size: 25px;
   line-height: 1.32;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   font-family: $primary-font;
 }
 .hero__item__button {
   background-color: $accent-color;
   font-size: 27px;
   font-family: $primary-font;
-  
-//   line-height: 1;
-  
+  border: none;
   color: $secondary-text-color;
   border-radius: 30px;
   padding: 10px 36px;
@@ -62,15 +63,19 @@
 .hero__slider {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    margin-top: 35px;
     align-items: center;
 }
 .hero__slider__btn {
 border: none;
 background: none;
 color: $secondary-text-color;
+font-family: $primary-font;
 font-size: 45px;
+// width: 5px;
+
 }
 .hero__slider__choice {
     width: 16px;
@@ -84,13 +89,44 @@ font-size: 45px;
     }
     &.hero__slider__choice--current {
         background-color: $hero-text-color;
-        width: 13px;
-        height: 13px;
+        width: 16px;
+        height: 16px;
+        border: 3px solid $hero-bgr-color;
+
     }
 
 }
-// .hero__slider__next {
+.sale__contain {
+@extend %auto-margin;
+padding: 30px;
 
-// }
-// .hero__img {
-// }
+}
+.sale__card {
+border: 2px solid $accent-color;
+padding-top: 50px;
+padding-left: 60px;
+padding-bottom: 60px;
+}
+.sale__img {
+    margin-left: -15px;
+    width:145px;
+    fill: #dfdfdf;
+     height:200px;
+}
+.sale__description{
+// font-family: $primary-font;
+font-size: 25px;
+line-height: 0.3;
+// margin-top: px;
+}
+.sale__name{
+    font-family: $secondary-font;
+    font-size: 50px;
+    margin-top: 17px;
+}
+.sale__link{
+    font-size: 30px;
+    margin-top: 35px;
+    display:inline-block;
+    color: $accent-color;
+}

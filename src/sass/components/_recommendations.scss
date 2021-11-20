@@ -1,0 +1,104 @@
+.recommendations {
+  @extend %auto-margin;
+  background-color: $primary-br-color;
+  padding: 30px;
+}
+.recommendations__contain {
+  max-width: 750px;
+  @extend %auto-margin;
+}
+.recommendations__preview {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 75px;
+}
+.recommendations__preview__tittel {
+  font-size: 50px;
+  font-family: $secondary-font;
+  margin-bottom: 20px;
+}
+.recommendations__preview__description {
+  font-size: 30px;
+  color: $tertiary-text-color;
+  line-height: 1.2;
+}
+.recommendations__list {
+  @extend %list;
+}
+.recommendations__card {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding-left: 65px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 85px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:nth-child(2) {
+      background-color: $hero-bgr-color;
+      color: $secondary-text-color;
+      padding-left: 275px;
+      padding-top: 67px;
+      padding-bottom: 60px;
+      &>.recommendations__card__img {
+        top: 45px;
+        left: -120px;
+      }
+      &>.recommendations__card__description{
+          max-width: 92%;
+      }
+      &>.recommendations__card__name {
+        margin-bottom: 20px;
+      }
+      &>.recommendations__card__tittel {
+        margin-bottom: 58px;
+      }
+  }
+  &:nth-child(3) {
+    // background-color: $hero-bgr-color;
+    // color: $secondary-text-color;
+    // padding-left: 275px;
+    padding-top: 135px;
+    padding-bottom: 120px;
+    &>.recommendations__card__img {
+      top: 74px;
+      right: -143px;
+    transform: scale(-1, 1) rotate(-2deg);
+    
+    }
+    &>.recommendations__card__description{
+        max-width: 60%;
+    }
+    &>.recommendations__card__name {
+      margin-bottom: 8px;
+      
+    }
+    &>.recommendations__card__tittel {
+      margin-bottom: 45px;
+    }
+}
+}
+
+.recommendations__card__name {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.recommendations__card__tittel {
+  font-size: 40px;
+  font-family: $secondary-font;
+  margin-bottom: 45px;
+}
+.recommendations__card__description {
+  max-width: 55%;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.recommendations__card__img {
+  position: absolute;
+  top: 25px;
+  right: -30px;
+  
+}

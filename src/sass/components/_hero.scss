@@ -1,5 +1,6 @@
 .hero {
   @extend %auto-margin;
+  background-color:$primary-br-color;
 }
 .hero__contain {
   @extend %auto-margin;
@@ -91,7 +92,7 @@ font-size: 45px;
         background-color: $hero-text-color;
         width: 16px;
         height: 16px;
-        border: 3px solid $hero-bgr-color;
+        border: 1px solid $hero-bgr-color;
 
     }
 
@@ -106,6 +107,7 @@ border: 2px solid $accent-color;
 padding-top: 50px;
 padding-left: 60px;
 padding-bottom: 60px;
+background-color: #fff;
 }
 .sale__img {
     margin-left: -15px;

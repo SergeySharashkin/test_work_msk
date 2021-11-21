@@ -1,0 +1,41 @@
+.footer {
+    @extend %auto-margin;
+}
+.footer__contain {
+    @extend %auto-margin;
+    padding: 40px 30px 40px 30px;
+    background-color: $footer-bgr-color;
+    letter-spacing: 0.02em;
+    max-width: 750px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        max-width: 1920px;
+    padding-left: 188px;
+    padding-right: 188px;
+      }
+    
+}
+.footer__link {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.footer__description {
+    margin-left: 20px;
+
+}
+.footer__description__site {
+    font-family: $secondary-font;
+    font-size: 50px;
+    color: $hero-text-color;
+}
+.footer__description__tittel {
+    font-size: 30px;
+    color: $tertiary-text-color;
+}
+.footer__signature {
+    padding-left: 20px;
+    margin-top: 25px;
+    font-size: 40px;
+    color: $hero-text-color;
+}

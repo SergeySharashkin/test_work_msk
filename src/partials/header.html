@@ -1,57 +1,91 @@
 <header class="page_header">
-  <div class="page-header__container">
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="menu-toggle__image">
-        <use href="./images/icons.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <div class="menu">
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu__close js-close-menu">
-          <svg class="menu__icon" width="25" height="25">
-            <use xlink:href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Компания </a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Портфолио</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Проектирование</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Ресторанам</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Застройщикам</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Гос.заказчикам</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Таблет-питание</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Сервис</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./">Контакты</a></li>
-          </ul>
-        </nav>
+  <div class="page-header__main-contain">
+ <div class="page_header__green">
+    <div class="page-header__container">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__image">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu__close js-close-menu">
+            <svg class="menu__icon" width="25" height="25">
+              <use xlink:href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Компания </a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Портфолио</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Проектирование</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Ресторанам</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Застройщикам</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Гос.заказчикам</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Таблет-питание</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Сервис</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./">Контакты</a></li>
+            </ul>
+            <ul class="main-nav__contacts">
+              <li class="main-nav__contacts__item">
+                <a href="mailto:info@stolovay.ru" class="main-nav__contacts__link">
+                  <svg width="25" height="25">
+                    <use xlink:href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                  info@stolovay.ru
+                </a>
+              </li>
+              <li class="main-nav__contacts__item">
+                <a href="tel:84957907205" class="main-nav__contacts__link">
+                  <svg width="25" height="25">
+                    <use xlink:href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                  8 495 790-72-05
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-    <a href="">
-      <div class="header__link">
-        <svg class="logo logo--header" width="29" height="28">
+  </div>
+  <div class="page_header__wite">
+    <div class="header__information">
+      <a href="" class="header__link">
+        <!-- <div class="header__link"> -->
+        <svg class="logo" width="55" height="55">
           <use xlink:href="./images/icons.svg#icon-logo"></use>
         </svg>
         <div class="header__link__description">
           <p class="header__link__site">Столовая.РУ</p>
           <p class="header__link__tittel">Создание пищеблоков</p>
         </div>
-      </div>
-    </a>
-    <ul class="header__contacts">
-      <li class="header__contacts__item">
-        <a class="header__contacts__link" href="">
-          <svg class="header__contacts__tel" width="45" height="56">
-            <use xlink:href="./images/icons.svg#icon-telephone"></use></svg>
-          </a>
-      </li>
-      <li class="header__contacts__item header__contacts__item--shop">
-        <a class="header__contacts__link" href="./">
-          <svg class="header__contacts__shop" width="55" height="60">
-            <use xlink:href="./images/icons.svg#icon-shopping"></use>
+        <!-- </div> -->
+      </a>
+      <form class="search-form" action="">
+        <button class="search-form__btn-all">Все<span>&#x23F7;</span></button>
+        <input type="text" />
+        <button class="search-form__btn-loop">
+          <img src="./images/img_loop.png" alt="" width="21px" height="21px"/></button>
+      </form>
+      <ul class="header__contacts">
+        <li class="header__contacts__item">
+          <a class="header__contacts__link" href="tel:+78005004344">
+            <svg class="header__contacts__tel" width="45" height="56">
+              <use xlink:href="./images/icons.svg#icon-telephone"></use>
             </svg>
           </a>
-      </li>
-    </ul>
+        </li>
+        <li class="header__contacts__item header__contacts__item--shop">
+          <a class="header__contacts__link" href="./">
+            <svg class="header__contacts__shop" width="55" height="60">
+              <use xlink:href="./images/icons.svg#icon-shopping"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
+  </div>
+ 
 </header>

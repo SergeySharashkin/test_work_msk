@@ -20,6 +20,12 @@
   justify-content: space-between;
   padding-top: 23px;
   padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 1920px;
+    padding-left: 188px;
+    padding-right: 188px;
+  }
 }
 .tools-button {
 font-size: 30px;

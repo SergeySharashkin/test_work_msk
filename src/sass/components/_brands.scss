@@ -8,6 +8,12 @@
   @extend %auto-margin;
   max-width: 750px;
   background-color: #fff;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 1920px;
+    padding-left: 188px;
+    padding-right: 188px;
+  }
 }
 .brands__list {
   @extend %list;

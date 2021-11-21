@@ -6,6 +6,12 @@
 .recommendations__contain {
   max-width: 750px;
   @extend %auto-margin;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 1920px;
+    padding-left: 188px;
+    padding-right: 188px;
+  }
 }
 .recommendations__preview {
   text-align: center;
@@ -15,7 +21,7 @@
 .recommendations__preview__tittel {
   font-size: 50px;
   font-family: $secondary-font;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .recommendations__preview__description {
   font-size: 30px;
@@ -95,6 +101,7 @@
   max-width: 55%;
   font-size: 25px;
   line-height: 1.2;
+  color:  $tertiary-text-color;
 }
 .recommendations__card__img {
   position: absolute;

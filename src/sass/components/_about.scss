@@ -1,0 +1,85 @@
+.about {
+  @extend %auto-margin;
+  background-color: $primary-br-color
+}
+.about__contain {
+  @extend %auto-margin;
+  padding: 30px 30px 155px 30px;
+  max-width: 750px;
+//   background-color: violet;
+@media screen and (min-width: 768px) {
+  display: flex;
+  max-width: 1920px;
+    padding-left: 188px;
+    padding-right: 188px;
+}
+}
+.about__mane {
+  padding-top: 100px;
+  padding-left: 55px;
+}
+// .about__link {
+   
+// }
+.about__link__site {
+  font-family: $secondary-font;
+font-size: 50px;
+color: $primary-text-color;
+margin-top: 45px;
+}
+.about__link__tittel {
+font-size: 25px;
+color:  $tertiary-text-color;
+
+}
+.about__tittel {
+    font-family: $secondary-font;
+font-size: 40px;
+// color: $primary-text-color;
+margin-top: 52px;
+}
+.about__indicators {
+    font-size: 30px;
+margin-top: 5px;
+color:  $tertiary-text-color;
+}
+.about__list {
+    margin-top: 35px;
+    @extend %list;
+    font-size: 30px;
+    line-height: 1.2;
+}
+// .about__item {
+    
+// }
+.about__description {
+    margin-top: 130px;
+}
+.about__description__tittel {
+    font-size: 50px;
+    font-family: $secondary-font;
+    margin-bottom: 60px;
+}
+.about__activity {
+    
+    font-size: 30px;
+    line-height: 1.2;
+    max-width: 96%;
+}
+.about__button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 55px;
+    font-size: 50px;
+    border: none;
+    background-color: $hero-bgr-color;
+    color: $secondary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    color: $primary-text-color;
+    }
+}
